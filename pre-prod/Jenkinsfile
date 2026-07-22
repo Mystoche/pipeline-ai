@@ -40,11 +40,14 @@ pipeline {
         }
 
         stage('Install & Build TS') {
-            steps {
-                sh 'npm install'
-                sh 'npx tsc'
-            }
+	   steps {
+        	dir('pre-prod') {
+           	 sh 'npm install'
+            	sh 'npm run build'
+        	}
+	   }
         }
+
 
         stage('SonarQube Analysis') {
             steps {
