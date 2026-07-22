@@ -1,2 +1,2 @@
 # pipeline-ai
-ai assistant on ci?cd pipeline
+ai assistant on ci/cd pipeline
