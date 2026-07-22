@@ -1,0 +1,164 @@
+<!-- Sélection du pays -->
+<div class="mb-3">
+  <label for="countrySelect" class="form-label">Pays</label>
+  <select class="form-select" name="country" id="countrySelect" aria-label="Sélection du pays" onchange="showMNO()">
+    <option value="" selected>Choisissez le pays</option>
+    <option value="COG">Congo Brazzaville</option>
+    <option value="CMR">Cameroun</option>
+    <option value="CIV">Côte d'Ivoire</option>
+    <option value="COD">République Démocratique du Congo</option>
+    <option value="GHA">Ghana</option>
+    <option value="KEN">Kenya</option>
+    <option value="MWI">Malawi</option>
+    <option value="NIG">Nigeria</option>
+    <option value="RWA">Rwanda</option>
+    <option value="SEN">Sénégal</option>
+    <option value="TZA">Tanzanie</option>
+    <option value="UGA">Ouganda</option>
+    <option value="ZMB">Zambie</option>
+  </select>
+</div>
+
+<!-- Listes d'opérateurs par pays -->
+<div id="COG" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_COG" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_COG" id="MNO_COG" aria-label="Opérateur Congo">
+    <option value="MTN_MOMO_COG" selected>MTN</option>
+    <option value="AIRTEL_COG">Airtel</option>
+  </select>
+</div>
+
+<div id="CMR" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_CMR" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_CMR" id="MNO_CMR" aria-label="Opérateur Cameroun">
+    <option value="MTN_MOMO_CMR" selected>MTN</option>
+    <option value="ORANGE_CMR">Orange</option>
+  </select>
+</div>
+
+<div id="CIV" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_CIV" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_CIV" id="MNO_CIV" aria-label="Opérateur Côte d'Ivoire">
+    <option value="MTN_MOMO_CIV" selected>MTN</option>
+    <option value="ORANGE_CIV">Orange</option>
+  </select>
+</div>
+
+<div id="COD" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_COD" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_COD" id="MNO_COD" aria-label="Opérateur RDC">
+    <option value="VODACOM_MPESA_COD" selected>Vodacom</option>
+    <option value="AIRTEL_OAPI_COD">Airtel</option>
+    <option value="ORANGE_COD">Orange</option>
+  </select>
+</div>
+
+<div id="GHA" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_GHA" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_GHA" id="MNO_GHA" aria-label="Opérateur Ghana">
+    <option value="VODAFONE_GHA" selected>Vodafone</option>
+    <option value="AIRTELTIGO_GHA">AT</option>
+    <option value="MTN_MOBILE_GHA">MTN</option>
+  </select>
+</div>
+
+<div id="KEN" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_KEN" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_KEN" id="MNO_KEN" aria-label="Opérateur Kenya">
+    <option value="MPESA_KEN" selected>MPesa</option>
+  </select>
+</div>
+
+<div id="NIG" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_NIG" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_NIG" id="MNO_NIG" aria-label="Opérateur Nigeria">
+    <option value="MTN_MOMO_NIG" selected>MTN</option>
+  </select>
+</div>
+
+<div id="MWI" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_MWI" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_MWI" id="MNO_MWI" aria-label="Opérateur Malawi">
+    <option value="TNM_MWI" selected>TNM</option>
+    <option value="AIRTEL_MWI">Airtel</option>
+  </select>
+</div>
+
+<div id="RWA" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_RWA" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_RWA" id="MNO_RWA" aria-label="Opérateur Rwanda">
+    <option value="MTN_MOMO_RWA" selected>MTN</option>
+    <option value="AIRTEL_RWA">Airtel</option>
+  </select>
+</div>
+
+<div id="SEN" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_SEN" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_SEN" id="MNO_SEN" aria-label="Opérateur Sénégal">
+    <option value="FREE_SEN" selected>Free</option>
+    <option value="ORANGE_SEN">Orange</option>
+  </select>
+</div>
+
+<div id="TZA" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_TZA" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_TZA" id="MNO_TZA" aria-label="Opérateur Tanzanie">
+    <option value="AIRTEL_TZA" selected>Airtel</option>
+    <option value="VODACOM_TZA">Vodacom</option>
+    <option value="TIGO_TZA">Tigo</option>
+    <option value="HALOTEL_TZA">Halotel</option>
+  </select>
+</div>
+
+<div id="UGA" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_UGA" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_UGA" id="MNO_UGA" aria-label="Opérateur Ouganda">
+    <option value="MTN_MOMO_UGA" selected>MTN</option>
+    <option value="AIRTEL_OAPI_UGA">Airtel</option>
+  </select>
+</div>
+
+<div id="ZMB" class="mb-3 country-mno" style="display:none;">
+  <label for="MNO_ZMB" class="form-label">Opérateur</label>
+  <select class="form-select" name="MNO_ZMB" id="MNO_ZMB" aria-label="Opérateur Zambie">
+    <option value="MTN_MOMO_ZMB" selected>MTN</option>
+    <option value="AIRTEL_OAPI_ZMB">Airtel</option>
+  </select>
+</div>
+
+<script>
+  function showMNO() {
+    var countrySelect = document.getElementById('countrySelect');
+    var selectedCountry = countrySelect.value;
+    var allMNO = document.getElementsByClassName('country-mno');
+    // Masquer toutes les sections
+    for (var i = 0; i < allMNO.length; i++) {
+      allMNO[i].style.display = 'none';
+    }
+    if (selectedCountry) {
+      var target = document.getElementById(selectedCountry);
+      if (target) {
+        target.style.display = 'block';
+      }
+    }
+  }
+  
+  // Initialisation : pré-sélection du pays et de l'opérateur si fournis par le backend
+  (function(){
+    var selectedCountry = "{{country}}";
+    var selectedMNO = "{{mno}}";
+    if (selectedCountry) {
+      document.getElementById('countrySelect').value = selectedCountry;
+      showMNO();
+      var mnoSelect = document.getElementById('MNO_' + selectedCountry);
+      if(mnoSelect){
+        for(var i=0; i < mnoSelect.options.length; i++){
+          if(mnoSelect.options[i].value === selectedMNO){
+            mnoSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+  })();
+</script>

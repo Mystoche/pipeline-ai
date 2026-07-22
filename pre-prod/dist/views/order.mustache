@@ -1,0 +1,32 @@
+{{> header}}
+<div class="container-payment">
+  <h3 class="text-center mb-4">Paiement Sécurisé</h3>
+  <form action="/" method="post" id="depositForm">
+    <!-- MSISDN Input -->
+    <div class="mb-3">
+      <label for="msisdn" class="form-label">Numéro de téléphone</label>
+      <input type="text" class="form-control" id="msisdn" name="msisdn" value="{{msisdn}}" required>
+      <div class="form-text">Veuillez ajouter l'indicatif (ex: 242)</div>
+    </div>
+    <!-- Montant fixe affiché -->
+    <div class="mb-3">
+      <label class="form-label">Montant</label>
+      <p class="form-control-plaintext fixed-price">5 000 FCFA</p>
+      <input type="hidden" name="amount" value="5000">
+    </div>
+    
+    {{> country-mno}}
+    
+    <!-- Description -->
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <input type="text" class="form-control" id="description" name="description" maxlength="22" value="{{description}}">
+    </div>
+    
+    <button type="submit" id="submitBtn" class="btn btn-primary w-100">
+      <span id="spinner" class="spinner-border spinner-border-sm me-2" role="status" style="display:none;"></span>
+      Payer maintenant
+    </button>
+  </form>
+</div>
+{{> footer}}
